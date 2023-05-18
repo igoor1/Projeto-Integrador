@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@100&family=Roboto:ital,wght@0,400;1,400;1,500&display=swap');
+
+  *{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  body{
+    background-color: #D9D9D9;
+  }
+
+  header{
+    background-color: #000;
+    color: white;
+  }
+
+  h1{
+    color: #13ff00ff
+  }
+
+  .row{
+     --bs-gutter-x: 0;
+     /* height: 5rem; */
+  }
+
+ .textLinkHeader {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .textLinkHeader::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  .textLinkHeader:hover::after {
+    background-color: #13ff00ff;
+  } 
+  
+
+  
+.btnLogin{
+    width: 150px;
+    transition: transform 0.3s ease;
+    font-size: 15px;
+    color: #13ff00ff;
+    border-color: #13ff00ff;
+    
+}
+
+.btnLogin:hover{
+    transform: scale(1.1);  
+    background-color: #13ff00ff;
+    color: #000;
+    font-size: 15px;
+}
+
