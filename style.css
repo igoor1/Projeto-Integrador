@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@100&family=Roboto:ital,wght@0,400;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@100&display=swap');
 
   *{
     margin: 0%;
@@ -79,4 +81,129 @@
 
 main{
   height: 90vh;
+}
+
+/* Pagina Login*/
+
+.login{
+  height: 60vh;
+  width: 60vh;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.containerForms{
+  padding-top: 10vh;
+  padding-left: 15vh;
+  align-items: center;
+}
+
+.inputBox{
+  position: relative;
+  margin-bottom: 2.2rem;
+}
+
+.inputUser{
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  color: white;
+  width: 30vh;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.labelInput{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: .4s;
+  font-size: 20px;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+  top: -20px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.btnCadastrarLogar{
+    width: 30vh;
+    transition: transform 0.3s ease;
+    font-size: 20px;
+    color: #fff;
+    border-color: #fff;
+}
+
+.btnCadastrarLogar:hover{
+    transform: scale(1.1);  
+    border-color: #13ff00ff;
+    color: #13ff00ff;
+    font-size: 22px;
+}
+
+
+.barra{
+  background-color: #13ff00ff;
+  height: 60vh;
+  width: 1vh;
+  margin: 15vh;
+  border-radius: 5px;
+}
+
+.cadastro{
+  color: white;
+  height: 60vh;
+  width: 60vh;
+  background-color: black;
+  border-radius: 5px;
+}
+
+@media (max-width: 1150px) {
+  .container-fluid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .barra {
+    width: 60vh;
+    height: 1vh;
+    margin: 15px auto;
+  }
+}
+
+@media(max-width: 800px){
+    .containerForms{
+      padding-left: 5vh;
+    }
+
+    .login{
+      width: 45vh;
+      height: 50vh;
+    }
+
+    .barra{
+      width: 40vh;
+    }
+
+    .btnCadastrarLogar{
+      margin: 0px;
+    }
+
+    .cadastro{
+      width: 45vh;
+      height: 55vh;
+    }
+}
+
+.titleLoginCadastro{
+  font-size: 45px;
+  text-align: center;
+  color: #fff;
+  margin-top: 4vh;
+  font-family: 'Berkshire Swash', cursive;
 }
