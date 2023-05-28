@@ -10,9 +10,12 @@
     background-color: #D9D9D9;
   }
 
+  /* Header */
+
   header{
     background-color: #000;
     color: white;
+    padding: 10px;
   }
 
   h1{
@@ -31,6 +34,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+
   }
   
   .textLinkHeader::after {
@@ -66,3 +70,13 @@
     font-size: 15px;
 }
 
+.logo{
+  width: 50px;
+}
+
+
+/* Main */
+
+main{
+  height: 90vh;
+}
